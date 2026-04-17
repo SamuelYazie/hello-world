@@ -1,22 +1,24 @@
 'use strict'
 
-const codingSound = document.getElementById('coding-Sound');
+import { onEvent, select, selectById, selectAll, print } from "./utility.js";
+
+const codingSound = selectById('coding-Sound');
 let userName;
 userName = window.prompt("What is your name?");
-console.log(`Hello to the world of coding ${userName}`);
+print(`Hello to the world of coding ${userName}`);
 
-let title = document.getElementById('main-title');
+let title = selectById('main-title');
 title.innerText = `Hello to the world of coding ${userName}`;
 
-document.addEventListener('click', () => {
+onEvent('click', document, () => {
     codingSound.play();
     codingSound.volume = 0.8;
 });
 
-console.log("Hello world");
+print("Hello world");
 
 let greeting = "Hello, World!";
-console.log(greeting);
+print(greeting);
 
 let name = "Samuel";
-console.log(`Hello world, my name is ${name}`);
+print(`Hello world, my name is ${name}`);
