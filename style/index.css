@@ -24,7 +24,7 @@ body {
     50% {
         color: #00ff00; 
     }
-    100% {
+    80% {
         color: #00eeff; 
     }
 }
@@ -32,5 +32,5 @@ body {
 .title {
     font-size: 65px;
     color:red;
-    animation: colorChange 3s infinite;
+    animation: colorChange 4s infinite;
 }
