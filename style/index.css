@@ -29,8 +29,35 @@ body {
     }
 }
 
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+.container {
+    display: inline-block;
+}
+
 .title {
+    font-family: "Press Start 2P", sans-serif;
     font-size: 65px;
     color:red;
     animation: colorChange 4s infinite;
+    font-size: 50px;
+    width: 100%;
+    color:red;
+    animation: colorChange 4s infinite;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-effect {
+    animation: 
+        typing 4s,
+        cursor .4s step-end infinite alternate,
+        colorChange 4s infinite;
 }

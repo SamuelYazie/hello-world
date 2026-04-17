@@ -10,7 +10,11 @@ print(`Hello to the world of coding ${userName}`);
 let title = selectById('main-title');
 title.innerText = `Hello to the world of coding ${userName}`;
 
-onEvent('click', document, () => {
+document.fonts.ready.then(() => {
+    title.classList.add('typing-effect');
+});
+
+onEvent('load', document, () => {
     codingSound.play();
     codingSound.volume = 0.8;
 });
