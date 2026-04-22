@@ -14,7 +14,7 @@ document.fonts.ready.then(() => {
     title.classList.add('typing-effect');
 });
 
-onEvent('load', document, () => {
+onEvent('click', document, () => {
     codingSound.play();
     codingSound.volume = 0.8;
 });
